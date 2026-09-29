@@ -10,6 +10,14 @@ This project runs **Next.js 16.3.6** with **React 19.2.8**, ahead of training da
 
 One concrete example already present in this codebase: `app/layout.tsx`'s `RootLayout` types its props as `LayoutProps<"/">` (a generated, route-specific type) rather than the classic hand-written `{ children: React.ReactNode }`. Follow whatever typing/generation convention the docs describe for new routes rather than assuming older patterns still apply.
 
+## IMPORTANT: always consult `/docs` first
+
+**Before generating or modifying ANY code, ALWAYS first check the `/docs` directory for the relevant standards file(s) and follow them.** The docs in `/docs` are the authoritative coding standards for this project and take precedence over general conventions.
+
+Current docs:
+
+- `docs/ui.md` — UI standards. **ONLY shadcn/ui components may be used for UI. ABSOLUTELY no custom UI components.**
+
 ## Commands
 
 ```bash
